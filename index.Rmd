@@ -6,7 +6,9 @@ output:
         toc_float: TRUE
 ---
 
-This is my submission for Assignment \#5! I have three interactive plots below that make improvements on my midterm. These plots will be making an appearance on my final project website, which is exciting!
+### [Final Project Website]{.ul}
+
+This is my submission for Assignment \#5! I have three interactive plots below that make improvements on my midterm. These plots will be making an appearance on my final project website, which is exciting! You can check out my final website [here](https://jaxabercrombie.github.io/finalproject-pm566/), which features the following three plots and descriptions for each.
 
 ```{r libraries, include = FALSE}
 library(tidyverse)
@@ -129,7 +131,9 @@ ggplotly(fig2, tooltip = c("x", "y"))
 mergedCA[is.na(mergedCA)] = 0
 ```
 
-$$\\[.1in]$$[Fig 3: Vaccination by Company]{.ul}
+$$\\[.1in]$$
+
+### [Fig 3: Vaccination by Company]{.ul}
 
 ```{r fig3, echo = FALSE, warnings = FALSE, message=FALSE}
 mergedCA3 <-
@@ -160,7 +164,3 @@ fig3 <-
 
 ggplotly(fig3, tooltip = c("x", "y"))
 ```
-
-### [Final Website]{.ul}
-
-Check out my final project website, featuring these three interactive plots with descriptions for each, [here](https://jaxabercrombie.github.io/finalproject-pm566/)!
