@@ -102,8 +102,6 @@ plotly <- ggplotly(plot)
 plotly
 ```
 
-The figure above depicts how vaccine efforts have been across four main regions of California, with country-specific data illustrated for each region. Feel free to toggle with the available counties to make direct comparisons or remove unwanted lines! The data spans from the debut of the COVID-19 vaccine on December 15th, 2020 up until November 3rd, 2021 (as with all following figures). Each region has a comparable number of counties, making these groupings representative and more reliable for drawing conclusions.Generally, each region experienced similar uptake in vaccination, as seen with almost congruent plot shapes. Additionally, each region and respective county followed a similar path of surging after April 2021's eligibility expansion and began to slow quickly during summer of 2021. However, there are certainly some regional differences, like the Bay Area having the highest percent of fully vaccinated individuals and Superior California the lowest. Furthermore, regions vary in range of the percent of fully vaccinated individuals; the Bay Area has a range of about 20% between its lowest and highest performing counties, while Superior California has a difference of about 30% between its lowest and highest. Overall, it appears that urban areas (Bay Area and Southern California) have more vaccine uptake than rural areas (Central and Superior California) on average, which will be something to consider with subsequent figures on this website. Access comes to mind as an immediate hurdle for vaccination, as physical distance from urban centers may make rural living disadvantageous.
-
 $$\\[.1in]$$
 
 ### [Fig 2: Doses, Cases, and Deaths]{.ul}
@@ -131,11 +129,7 @@ ggplotly(fig2, tooltip = c("x", "y"))
 mergedCA[is.na(mergedCA)] = 0
 ```
 
-Figure 2 illustrates a potential relationship between vaccine uptake and cases and deaths. At first, individuals rushed to be vaccinated for their own safety, but some individuals remained hesitant and lacked motivation to become vaccinated for many months. Though, changes in cases and deaths due to variants made for rises in the number of vaccine doses administered. A rise in cases appeared to motivate greater vaccine uptake after the start of July 2021, likely because of the once novel Delta variant. Compared to the quasi-plateaus of vaccine uptake as seen in Figure 1, there are visible surges between July and October of 2021 for three regions, excluding the Bay Area. This relationship may also have been influenced by policy efforts to require vaccines in public spaces, eligibility for booster shots, and the realization of the effectiveness of vaccination. Nonetheless, it seems natural for people to protect themselves when a threat is imminent, despite prior sentiments against vaccination.
-
-$$\\[.1in]$$
-
-### [Fig 3: Vaccination by Company]{.ul}
+$$\\[.1in]$$[Fig 3: Vaccination by Company]{.ul}
 
 ```{r fig3, echo = FALSE, warnings = FALSE, message=FALSE}
 mergedCA3 <-
@@ -167,8 +161,6 @@ fig3 <-
 ggplotly(fig3, tooltip = c("x", "y"))
 ```
 
-Understanding how vaccination efforts differ by company may influence future roll-outs of vaccines, since timeliness of roll-out and targeting specific areas may make one company a preferable candidate compared to another. Evident in the figure above, the more "rural" regions tend to receive Moderna doses rather than the Pfizer doses that more "urban" regions tend to receive. Johnson & Johnson doses are limited across all regions, and even when accounting for J&J being single-dose, its impact appears limited. That could potentially be because of defects and withdrawal from markets at times. Assuming that populous urban areas were first to receive vaccines because of supply chain ease with product shipment at ports, Pfizer certainly made an impact. Being the first to reach the vaccine market and be prevalent in populous areas made for a sustainable difference in uptake. Despite Moderna's later debut as a COVID-19 vaccine company, its use surged quickly and ultimately remained dominant in Superior and Central California. Whether it was purposefully more available in those two regions is unknown, but its popularity may have been influenced by Pfizer's presence elsewhere. What appears most fascinating about the relationship between Moderna and Pfizer is that Moderna surpassed Pfizer at one point in each region, which may demonstrate a supply surge that lead to temporary or sustained success.
-
 ### [Final Website]{.ul}
 
-Check out my final project website, featuring these three interactive plots, here!
+Check out my final project website, featuring these three interactive plots with descriptions for each, [here](https://jaxabercrombie.github.io/finalproject-pm566/)!
